@@ -1,0 +1,295 @@
+openapi: 3.0.1
+info:
+  title: defaultTitle
+  description: defaultDescription
+  version: '0.1'
+servers:
+  - url: 'http://localhost:3000'
+paths:
+  /products/6:
+    put:
+      description: Auto generated using Swagger Inspector
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                description:
+                  type: string
+                id:
+                  type: integer
+                category:
+                  type: string
+                display_name:
+                  type: string
+            examples:
+              '0':
+                value: |-
+                  {
+                          "id": 6,
+                          "category": "rice",
+                          "name": "basmati",
+                          "display_name": "long grain expensive",
+                          "description": "Himalayan rice"
+                  }
+              '1':
+                value: |2-
+                   {
+                              "id": 6,
+                              "category": "rice",
+                              "name": "basmati",
+                              "display_name": "long grain",
+                              "description": "Himalayan rice"
+                          }
+      responses:
+        '404':
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json; charset=utf-8:
+              schema:
+                type: string
+              examples: {}
+      servers:
+        - url: 'http://localhost:3000'
+    delete:
+      description: Auto generated using Swagger Inspector
+      responses:
+        '404':
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json; charset=utf-8:
+              schema:
+                type: string
+              examples: {}
+      servers:
+        - url: 'http://localhost:3000'
+    servers:
+      - url: 'http://localhost:3000'
+  /products/:
+    get:
+      description: Auto generated using Swagger Inspector
+      responses:
+        '200':
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json; charset=utf-8:
+              schema:
+                type: string
+              examples: {}
+      servers:
+        - url: 'http://localhost:3000'
+    post:
+      description: Auto generated using Swagger Inspector
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties: {}
+            examples:
+              '0':
+                value: |-
+                  [
+                      {
+                          "id": 6,
+                          "category": "rice",
+                          "name": "basmati",
+                          "display_name": "long grain",
+                          "description": "Himalayan rice"
+                      },
+                      {
+                          "id": 7,
+                          "category": "Cgicken",
+                          "name": "Tandoori",
+                          "display_name": "Barbq",
+                          "description": "spicy chicken"
+                      }
+                  ]
+      responses:
+        '201':
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json; charset=utf-8:
+              schema:
+                type: string
+              examples: {}
+      servers:
+        - url: 'http://localhost:3000'
+    servers:
+      - url: 'http://localhost:3000'
+  /categories/:
+    get:
+      description: Auto generated using Swagger Inspector
+      responses:
+        '200':
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json; charset=utf-8:
+              schema:
+                type: string
+              examples: {}
+      servers:
+        - url: 'http://localhost:3000'
+    servers:
+      - url: 'http://localhost:3000'
+  /categories/5:
+    put:
+      description: Auto generated using Swagger Inspector
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                display_name:
+                  type: string
+            examples:
+              '0':
+                value: |-
+                  {
+                          "display_name": "rice and beans and chicken"
+                      }
+      responses:
+        '200':
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json; charset=utf-8:
+              schema:
+                type: string
+              examples: {}
+      servers:
+        - url: 'http://localhost:3000'
+    delete:
+      description: Auto generated using Swagger Inspector
+      responses:
+        '200':
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json; charset=utf-8:
+              schema:
+                type: string
+              examples: {}
+      servers:
+        - url: 'http://localhost:3000'
+    servers:
+      - url: 'http://localhost:3000'
+  /categories:
+    get:
+      description: Auto generated using Swagger Inspector
+      responses:
+        '200':
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json; charset=utf-8:
+              schema:
+                type: string
+              examples: {}
+      servers:
+        - url: 'http://localhost:3000'
+    put:
+      description: Auto generated using Swagger Inspector
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                description:
+                  type: string
+                id:
+                  type: integer
+                display_name:
+                  type: string
+            examples:
+              '0':
+                value: |-
+                  {
+                          "name": "footwear",
+                          "description": "All kinds of shoes",
+                          "id": 4,
+                          "display_name": "shoes"
+                      }
+              '1':
+                value: |-
+                  {
+                          "name": "footwear",
+                          "description": "All kinds of shoes",
+                          "id": 4,
+                          "display_name": "shoes for men and women"
+                      }
+              '2':
+                value: |-
+                  {
+                          "name": "food",
+                          "description": "All kinds of food",
+                          "id": 5,
+                          "display_name": "rice and beans"
+                      }
+      responses:
+        '404':
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json; charset=utf-8:
+              schema:
+                type: string
+              examples: {}
+      servers:
+        - url: 'http://localhost:3000'
+    post:
+      description: Auto generated using Swagger Inspector
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                description:
+                  type: string
+                id:
+                  type: integer
+                display_name:
+                  type: string
+            examples:
+              '0':
+                value: |-
+                  {
+                          "name": "footwear",
+                          "description": "All kinds of shoes",
+                          "id": 4,
+                          "display_name": "shoes"
+                      }
+              '1':
+                value: |-
+                  {
+                          "name": "footwear",
+                          "description": "All kinds of shoes",
+                          "id": 4,
+                          "display_name": "shoes for men and women"
+                      }
+              '2':
+                value: |-
+                  {
+                          "name": "food",
+                          "description": "All kinds of food",
+                          "id": 5,
+                          "display_name": "rice and beans"
+                      }
+      responses:
+        '201':
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json; charset=utf-8:
+              schema:
+                type: string
+              examples: {}
+      servers:
+        - url: 'http://localhost:3000'
+    servers:
+      - url: 'http://localhost:3000'
