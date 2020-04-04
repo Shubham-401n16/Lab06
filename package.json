@@ -1,0 +1,29 @@
+{
+  "name": "Lab06",
+  "version": "1.0.0",
+  "description": "## Simple API",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint **/.js",
+    "test": "jest --coverage --verbose",
+    "test-watch": "jest --watchAll --coverage --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shubham-401n16/Lab06.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Shubham-401n16/Lab06/issues"
+  },
+  "homepage": "https://github.com/Shubham-401n16/Lab06#readme",
+  "dependencies": {
+    "middleware": "^1.0.0",
+    "router": "^1.3.5"
+  },
+  "devDependencies": {
+    "json-server": "^0.16.1"
+  }
+}
