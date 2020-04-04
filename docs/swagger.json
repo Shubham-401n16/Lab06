@@ -1,10 +1,10 @@
 openapi: 3.0.1
 info:
-  title: defaultTitle
-  description: defaultDescription
+  title: Rest and Http
+  description: CRUD Methods
   version: '0.1'
 servers:
-  - url: 'http://localhost:3000'
+  - url: 'http: //localhost:3000'
 paths:
   /products/6:
     put:
@@ -29,21 +29,17 @@ paths:
               '0':
                 value: |-
                   {
-                          "id": 6,
-                          "category": "rice",
-                          "name": "basmati",
-                          "display_name": "long grain expensive",
-                          "description": "Himalayan rice"
-                  }
+  "id": 6,
+  "category": "rice",
+  "name": "basmati",
+  "display_name": "long grain expensive",
+  "description": "Himalayan rice"
+}
               '1':
                 value: |2-
                    {
-                              "id": 6,
-                              "category": "rice",
-                              "name": "basmati",
-                              "display_name": "long grain",
-                              "description": "Himalayan rice"
-                          }
+  "id": 6
+}
       responses:
         '404':
           description: Auto generated using Swagger Inspector
@@ -53,11 +49,11 @@ paths:
                 type: string
               examples: {}
       servers:
-        - url: 'http://localhost:3000'
+        - url: 'http: //localhost:3000'
     delete:
       description: Auto generated using Swagger Inspector
       responses:
-        '404':
+        '200':
           description: Auto generated using Swagger Inspector
           content:
             application/json; charset=utf-8:
@@ -65,9 +61,9 @@ paths:
                 type: string
               examples: {}
       servers:
-        - url: 'http://localhost:3000'
+        - url: 'http: //localhost:3000'
     servers:
-      - url: 'http://localhost:3000'
+      - url: 'http: //localhost:3000'
   /products/:
     get:
       description: Auto generated using Swagger Inspector
@@ -80,7 +76,7 @@ paths:
                 type: string
               examples: {}
       servers:
-        - url: 'http://localhost:3000'
+        - url: 'http: //localhost:3000'
     post:
       description: Auto generated using Swagger Inspector
       requestBody:
@@ -93,21 +89,21 @@ paths:
               '0':
                 value: |-
                   [
-                      {
-                          "id": 6,
-                          "category": "rice",
-                          "name": "basmati",
-                          "display_name": "long grain",
-                          "description": "Himalayan rice"
-                      },
-                      {
-                          "id": 7,
-                          "category": "Cgicken",
-                          "name": "Tandoori",
-                          "display_name": "Barbq",
-                          "description": "spicy chicken"
-                      }
-                  ]
+  {
+    "id": 6,
+    "category": "rice",
+    "name": "basmati",
+    "display_name": "long grain",
+    "description": "Himalayan rice"
+  },
+  {
+    "id": 7,
+    "category": "Cgicken",
+    "name": "Tandoori",
+    "display_name": "Barbq",
+    "description": "spicy chicken"
+  }
+]
       responses:
         '201':
           description: Auto generated using Swagger Inspector
@@ -117,9 +113,9 @@ paths:
                 type: string
               examples: {}
       servers:
-        - url: 'http://localhost:3000'
+        - url: 'http: //localhost:3000'
     servers:
-      - url: 'http://localhost:3000'
+      - url: 'http: //localhost:3000'
   /categories/:
     get:
       description: Auto generated using Swagger Inspector
@@ -132,9 +128,24 @@ paths:
                 type: string
               examples: {}
       servers:
-        - url: 'http://localhost:3000'
+        - url: 'http: //localhost:3000'
     servers:
-      - url: 'http://localhost:3000'
+      - url: 'http: //localhost:3000'
+  /categories/4:
+    delete:
+      description: Auto generated using Swagger Inspector
+      responses:
+        '200':
+          description: Auto generated using Swagger Inspector
+          content:
+            application/json; charset=utf-8:
+              schema:
+                type: string
+              examples: {}
+      servers:
+        - url: 'http: //localhost:3000'
+    servers:
+      - url: 'http: //localhost:3000'
   /categories/5:
     put:
       description: Auto generated using Swagger Inspector
@@ -150,8 +161,8 @@ paths:
               '0':
                 value: |-
                   {
-                          "display_name": "rice and beans and chicken"
-                      }
+  "display_name": "rice and beans and chicken"
+}
       responses:
         '200':
           description: Auto generated using Swagger Inspector
@@ -161,21 +172,9 @@ paths:
                 type: string
               examples: {}
       servers:
-        - url: 'http://localhost:3000'
-    delete:
-      description: Auto generated using Swagger Inspector
-      responses:
-        '200':
-          description: Auto generated using Swagger Inspector
-          content:
-            application/json; charset=utf-8:
-              schema:
-                type: string
-              examples: {}
-      servers:
-        - url: 'http://localhost:3000'
+        - url: 'http: //localhost:3000'
     servers:
-      - url: 'http://localhost:3000'
+      - url: 'http: //localhost:3000'
   /categories:
     get:
       description: Auto generated using Swagger Inspector
@@ -188,7 +187,7 @@ paths:
                 type: string
               examples: {}
       servers:
-        - url: 'http://localhost:3000'
+        - url: 'http: //localhost:3000'
     put:
       description: Auto generated using Swagger Inspector
       requestBody:
@@ -209,27 +208,27 @@ paths:
               '0':
                 value: |-
                   {
-                          "name": "footwear",
-                          "description": "All kinds of shoes",
-                          "id": 4,
-                          "display_name": "shoes"
-                      }
+  "name": "footwear",
+  "description": "All kinds of shoes",
+  "id": 4,
+  "display_name": "shoes"
+}
               '1':
                 value: |-
                   {
-                          "name": "footwear",
-                          "description": "All kinds of shoes",
-                          "id": 4,
-                          "display_name": "shoes for men and women"
-                      }
+  "name": "footwear",
+  "description": "All kinds of shoes",
+  "id": 4,
+  "display_name": "shoes for men and women"
+}
               '2':
                 value: |-
                   {
-                          "name": "food",
-                          "description": "All kinds of food",
-                          "id": 5,
-                          "display_name": "rice and beans"
-                      }
+  "name": "food",
+  "description": "All kinds of food",
+  "id": 5,
+  "display_name": "rice and beans"
+}
       responses:
         '404':
           description: Auto generated using Swagger Inspector
@@ -239,7 +238,7 @@ paths:
                 type: string
               examples: {}
       servers:
-        - url: 'http://localhost:3000'
+        - url: 'http: //localhost:3000'
     post:
       description: Auto generated using Swagger Inspector
       requestBody:
@@ -260,27 +259,27 @@ paths:
               '0':
                 value: |-
                   {
-                          "name": "footwear",
-                          "description": "All kinds of shoes",
-                          "id": 4,
-                          "display_name": "shoes"
-                      }
+  "name": "footwear",
+  "description": "All kinds of shoes",
+  "id": 4,
+  "display_name": "shoes"
+}
               '1':
                 value: |-
                   {
-                          "name": "footwear",
-                          "description": "All kinds of shoes",
-                          "id": 4,
-                          "display_name": "shoes for men and women"
-                      }
+  "name": "footwear",
+  "description": "All kinds of shoes",
+  "id": 4,
+  "display_name": "shoes for men and women"
+}
               '2':
                 value: |-
                   {
-                          "name": "food",
-                          "description": "All kinds of food",
-                          "id": 5,
-                          "display_name": "rice and beans"
-                      }
+  "name": "food",
+  "description": "All kinds of food",
+  "id": 5,
+  "display_name": "rice and beans"
+}
       responses:
         '201':
           description: Auto generated using Swagger Inspector
@@ -290,6 +289,6 @@ paths:
                 type: string
               examples: {}
       servers:
-        - url: 'http://localhost:3000'
+        - url: 'http: //localhost:3000'
     servers:
-      - url: 'http://localhost:3000'
+      - url: 'http: //localhost:3000'

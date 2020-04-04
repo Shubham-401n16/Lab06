@@ -9,7 +9,7 @@
 * [Github Actions](https://github.com/Shubham-401n16/Lab06/actions)
 
 #### Documentation
-* [api docs](https://app.swaggerhub.com/apis/smajumdar22/Lab06/0.1#/) 
+* [api docs](https://app.swaggerhub.com/apis/smajumdar22/RestAndHttp/0.1) 
 * JSDoc Comment Required for all modules and functions in all .js files
 
 ### Setup

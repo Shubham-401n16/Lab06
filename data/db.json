@@ -17,12 +17,6 @@
       "description": "All kinds of washing supplies",
       "id": 3,
       "display_name": "soap"
-    },
-    {
-      "name": "footwear",
-      "description": "All kinds of shoes",
-      "id": 4,
-      "display_name": "shoes"
     }
   ],
   "products": [
@@ -46,13 +40,6 @@
       "name": "detergent",
       "display_name": "soap",
       "description": "regular washing"
-    },
-    {
-      "id": 6,
-      "category": "rice",
-      "name": "basmati",
-      "display_name": "long grain",
-      "description": "Himalayan rice"
     },
     {
       "id": 7,
